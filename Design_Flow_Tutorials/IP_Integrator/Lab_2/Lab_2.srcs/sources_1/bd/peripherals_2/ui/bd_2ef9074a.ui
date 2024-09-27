@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.848276",
+   "Default View_TopLeft":"-521,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace port S_AXI2 -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port S_AXI3 -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port dip_switches_4bits -pg 1 -lvl 2 -x 310 -y 220 -defaultsOSRD
+preplace port iic_main -pg 1 -lvl 2 -x 310 -y 50 -defaultsOSRD
+preplace port led_8bits -pg 1 -lvl 2 -x 310 -y 200 -defaultsOSRD
+preplace port push_buttons_5bits -pg 1 -lvl 2 -x 310 -y 500 -defaultsOSRD
+preplace port rotary_switch -pg 1 -lvl 2 -x 310 -y 480 -defaultsOSRD
+preplace port rs232_uart -pg 1 -lvl 2 -x 310 -y 340 -defaultsOSRD
+preplace port port-id_iic2intc_irpt -pg 1 -lvl 2 -x 310 -y 70 -defaultsOSRD
+preplace port port-id_interrupt -pg 1 -lvl 2 -x 310 -y 360 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 160 -y 490 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 1 -x 160 -y 210 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 1 -x 160 -y 70 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 1 -x 160 -y 350 -defaultsOSRD
+preplace netloc axi_iic_0_iic2intc_irpt 1 1 1 NJ 70
+preplace netloc axi_uartlite_0_interrupt 1 1 1 NJ 360
+preplace netloc microblaze_0_Clk 1 0 1 30 70n
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 0 1 20 90n
+preplace netloc axi_gpio_0_GPIO 1 1 1 NJ 480
+preplace netloc axi_gpio_0_GPIO2 1 1 1 NJ 500
+preplace netloc axi_gpio_1_GPIO 1 1 1 NJ 200
+preplace netloc axi_gpio_1_GPIO2 1 1 1 NJ 220
+preplace netloc axi_iic_0_IIC 1 1 1 NJ 50
+preplace netloc axi_interconnect_0_M00_AXI 1 0 1 NJ 470
+preplace netloc axi_interconnect_0_M01_AXI 1 0 1 NJ 330
+preplace netloc axi_interconnect_0_M03_AXI 1 0 1 NJ 190
+preplace netloc axi_interconnect_0_M04_AXI 1 0 1 NJ 50
+preplace netloc axi_uartlite_0_UART 1 1 1 NJ 340
+levelinfo -pg 1 0 160 310
+pagesize -pg 1 -db -bbox -sgen -150 -10 500 570
+"
+}
+0

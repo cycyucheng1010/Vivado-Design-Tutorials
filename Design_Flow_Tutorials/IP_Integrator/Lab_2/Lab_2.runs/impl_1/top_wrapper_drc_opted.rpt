@@ -1,0 +1,223 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Fri Sep 27 18:22:29 2024
+| Host         : DESKTOP-F0SHCEQ running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+| Design       : top_wrapper
+| Device       : xcku040-ffva1156-2-e
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 26
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| MIG-55    | Warning  | Pin Constraint Warning                              | 1          |
+| REQP-1774 | Warning  | RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32          | 4          |
+| HDPRA-52  | Advisory | Narrow Edge without Location Constraints            | 1          |
+| HDPRA-53  | Advisory | Edge with Location Constraints                      | 1          |
+| HDPRA-56  | Advisory | Narrow Gap without Location Constraints             | 9          |
+| HDPRA-57  | Advisory | Gap with Location Constraints                       | 1          |
+| HDPRA-58  | Advisory | Gap without Location Constraints                    | 8          |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+MIG-55#1 Warning
+Pin Constraint Warning  
+[top_i/memory_ss/ddr4_0] The memory interface port %ELG Drive Strength has changed from the recommended value of 8 to the new value of 0.
+Related violations: <none>
+
+REQP-1774#1 Warning
+RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
+The RAMB36E2 cell top_i/memory_ss/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1774#2 Warning
+RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
+The RAMB36E2 cell top_i/memory_ss/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1774#3 Warning
+RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
+The RAMB36E2 cell top_i/microblaze_ss/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1774#4 Warning
+RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
+The RAMB36E2 cell top_i/microblaze_ss/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
+Related violations: <none>
+
+HDPRA-52#1 Advisory
+Narrow Edge without Location Constraints  
+Static Logic contains narrow edges that may impact implementation results.  It is best to include these region(s) in the adjacent RP pblock, 'pblock_1'.  Removing the static edge will allow for continuous placement.  TAG='52_RE_S_RP1'.  Sites on edge: SLICE_X100Y47, SLICE_X100Y48, SLICE_X100Y49, SLICE_X100Y50, SLICE_X100Y51,
+SLICE_X100Y52, SLICE_X100Y53, SLICE_X100Y54, SLICE_X100Y55, SLICE_X100Y56,
+SLICE_X100Y57, SLICE_X100Y58, SLICE_X100Y59, SLICE_X100Y60, SLICE_X100Y61
+ (the first 15 of 62 listed)
+Related violations: <none>
+
+HDPRA-53#1 Advisory
+Edge with Location Constraints  
+Static Logic contains edges with location constraints that may impact implementation results.  It is best to create an EXCLUDE_PLACEMENT static pblock to cover the edge which prevents unnecessary logic from getting placed in narrow gap.  TAG='53_LE_S_RP1'.  Sites on edge: SLICE_X0Y47, SLICE_X0Y48, SLICE_X0Y49, SLICE_X0Y50, SLICE_X0Y51,
+SLICE_X0Y52, SLICE_X0Y53, SLICE_X0Y54, SLICE_X0Y55, SLICE_X0Y56,
+SLICE_X0Y57, SLICE_X0Y58, SLICE_X0Y59, SLICE_X0Y60, SLICE_X0Y61
+ (the first 15 of 62 listed)
+Related violations: <none>
+
+HDPRA-56#1 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G12_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X2Y24:DSP48E2_X2Y25 SLICE_X17Y60:SLICE_X17Y64 DSP48E2_X2Y22:DSP48E2_X2Y23 SLICE_X17Y55:SLICE_X17Y59 DSP48E2_X2Y20:DSP48E2_X2Y21 SLICE_X17Y50:SLICE_X17Y54 DSP48E2_X2Y18:DSP48E2_X2Y19 SLICE_X17Y45:SLICE_X17Y49 DSP48E2_X2Y16:DSP48E2_X2Y17 SLICE_X17Y40:SLICE_X17Y44 DSP48E2_X2Y14:DSP48E2_X2Y15 SLICE_X17Y35:SLICE_X17Y39 DSP48E2_X2Y12:DSP48E2_X2Y13 SLICE_X17Y30:SLICE_X17Y34 DSP48E2_X2Y10:DSP48E2_X2Y11 SLICE_X17Y25:SLICE_X17Y29 DSP48E2_X2Y8:DSP48E2_X2Y9 SLICE_X17Y20:SLICE_X17Y24 DSP48E2_X2Y6:DSP48E2_X2Y7 SLICE_X17Y15:SLICE_X17Y19 DSP48E2_X2Y4:DSP48E2_X2Y5 SLICE_X17Y10:SLICE_X17Y14 DSP48E2_X2Y2:DSP48E2_X2Y3 SLICE_X17Y5:SLICE_X17Y9 DSP48E2_X2Y0:DSP48E2_X2Y1 SLICE_X17Y0:SLICE_X17Y4 }
+Related violations: <none>
+
+HDPRA-56#2 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G28_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X6Y24:DSP48E2_X6Y25 SLICE_X42Y60:SLICE_X42Y64 DSP48E2_X6Y22:DSP48E2_X6Y23 SLICE_X42Y55:SLICE_X42Y59 DSP48E2_X6Y20:DSP48E2_X6Y21 SLICE_X42Y50:SLICE_X42Y54 DSP48E2_X6Y18:DSP48E2_X6Y19 SLICE_X42Y45:SLICE_X42Y49 DSP48E2_X6Y16:DSP48E2_X6Y17 SLICE_X42Y40:SLICE_X42Y44 DSP48E2_X6Y14:DSP48E2_X6Y15 SLICE_X42Y35:SLICE_X42Y39 DSP48E2_X6Y12:DSP48E2_X6Y13 SLICE_X42Y30:SLICE_X42Y34 DSP48E2_X6Y10:DSP48E2_X6Y11 SLICE_X42Y25:SLICE_X42Y29 DSP48E2_X6Y8:DSP48E2_X6Y9 SLICE_X42Y20:SLICE_X42Y24 DSP48E2_X6Y6:DSP48E2_X6Y7 SLICE_X42Y15:SLICE_X42Y19 DSP48E2_X6Y4:DSP48E2_X6Y5 SLICE_X42Y10:SLICE_X42Y14 DSP48E2_X6Y2:DSP48E2_X6Y3 SLICE_X42Y5:SLICE_X42Y9 DSP48E2_X6Y0:DSP48E2_X6Y1 SLICE_X42Y0:SLICE_X42Y4 }
+Related violations: <none>
+
+HDPRA-56#3 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G35_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X8Y24:DSP48E2_X8Y25 SLICE_X52Y60:SLICE_X52Y64 DSP48E2_X8Y22:DSP48E2_X8Y23 SLICE_X52Y55:SLICE_X52Y59 DSP48E2_X8Y20:DSP48E2_X8Y21 SLICE_X52Y50:SLICE_X52Y54 DSP48E2_X8Y18:DSP48E2_X8Y19 SLICE_X52Y45:SLICE_X52Y49 DSP48E2_X8Y16:DSP48E2_X8Y17 SLICE_X52Y40:SLICE_X52Y44 DSP48E2_X8Y14:DSP48E2_X8Y15 SLICE_X52Y35:SLICE_X52Y39 DSP48E2_X8Y12:DSP48E2_X8Y13 SLICE_X52Y30:SLICE_X52Y34 DSP48E2_X8Y10:DSP48E2_X8Y11 SLICE_X52Y25:SLICE_X52Y29 DSP48E2_X8Y8:DSP48E2_X8Y9 SLICE_X52Y20:SLICE_X52Y24 DSP48E2_X8Y6:DSP48E2_X8Y7 SLICE_X52Y15:SLICE_X52Y19 DSP48E2_X8Y4:DSP48E2_X8Y5 SLICE_X52Y10:SLICE_X52Y14 DSP48E2_X8Y2:DSP48E2_X8Y3 SLICE_X52Y5:SLICE_X52Y9 DSP48E2_X8Y0:DSP48E2_X8Y1 SLICE_X52Y0:SLICE_X52Y4 }
+Related violations: <none>
+
+HDPRA-56#4 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G38_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X9Y24:DSP48E2_X9Y25 SLICE_X57Y60:SLICE_X57Y64 DSP48E2_X9Y22:DSP48E2_X9Y23 SLICE_X57Y55:SLICE_X57Y59 DSP48E2_X9Y20:DSP48E2_X9Y21 SLICE_X57Y50:SLICE_X57Y54 DSP48E2_X9Y18:DSP48E2_X9Y19 SLICE_X57Y45:SLICE_X57Y49 DSP48E2_X9Y16:DSP48E2_X9Y17 SLICE_X57Y40:SLICE_X57Y44 DSP48E2_X9Y14:DSP48E2_X9Y15 SLICE_X57Y35:SLICE_X57Y39 DSP48E2_X9Y12:DSP48E2_X9Y13 SLICE_X57Y30:SLICE_X57Y34 DSP48E2_X9Y10:DSP48E2_X9Y11 SLICE_X57Y25:SLICE_X57Y29 DSP48E2_X9Y8:DSP48E2_X9Y9 SLICE_X57Y20:SLICE_X57Y24 DSP48E2_X9Y6:DSP48E2_X9Y7 SLICE_X57Y15:SLICE_X57Y19 DSP48E2_X9Y4:DSP48E2_X9Y5 SLICE_X57Y10:SLICE_X57Y14 DSP48E2_X9Y2:DSP48E2_X9Y3 SLICE_X57Y5:SLICE_X57Y9 DSP48E2_X9Y0:DSP48E2_X9Y1 SLICE_X57Y0:SLICE_X57Y4 }
+Related violations: <none>
+
+HDPRA-56#5 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G44_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X11Y24:DSP48E2_X11Y25 SLICE_X66Y60:SLICE_X66Y64 DSP48E2_X11Y22:DSP48E2_X11Y23 SLICE_X66Y55:SLICE_X66Y59 DSP48E2_X11Y20:DSP48E2_X11Y21 SLICE_X66Y50:SLICE_X66Y54 DSP48E2_X11Y18:DSP48E2_X11Y19 SLICE_X66Y45:SLICE_X66Y49 DSP48E2_X11Y16:DSP48E2_X11Y17 SLICE_X66Y40:SLICE_X66Y44 DSP48E2_X11Y14:DSP48E2_X11Y15 SLICE_X66Y35:SLICE_X66Y39 DSP48E2_X11Y12:DSP48E2_X11Y13 SLICE_X66Y30:SLICE_X66Y34 DSP48E2_X11Y10:DSP48E2_X11Y11 SLICE_X66Y25:SLICE_X66Y29 DSP48E2_X11Y8:DSP48E2_X11Y9 SLICE_X66Y20:SLICE_X66Y24 DSP48E2_X11Y6:DSP48E2_X11Y7 SLICE_X66Y15:SLICE_X66Y19 DSP48E2_X11Y4:DSP48E2_X11Y5 SLICE_X66Y10:SLICE_X66Y14 DSP48E2_X11Y2:DSP48E2_X11Y3 SLICE_X66Y5:SLICE_X66Y9 DSP48E2_X11Y0:DSP48E2_X11Y1 SLICE_X66Y0:SLICE_X66Y4 }
+Related violations: <none>
+
+HDPRA-56#6 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G47_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X12Y24:DSP48E2_X12Y25 SLICE_X71Y60:SLICE_X71Y64 DSP48E2_X12Y22:DSP48E2_X12Y23 SLICE_X71Y55:SLICE_X71Y59 DSP48E2_X12Y20:DSP48E2_X12Y21 SLICE_X71Y50:SLICE_X71Y54 DSP48E2_X12Y18:DSP48E2_X12Y19 SLICE_X71Y45:SLICE_X71Y49 DSP48E2_X12Y16:DSP48E2_X12Y17 SLICE_X71Y40:SLICE_X71Y44 DSP48E2_X12Y14:DSP48E2_X12Y15 SLICE_X71Y35:SLICE_X71Y39 DSP48E2_X12Y12:DSP48E2_X12Y13 SLICE_X71Y30:SLICE_X71Y34 DSP48E2_X12Y10:DSP48E2_X12Y11 SLICE_X71Y25:SLICE_X71Y29 DSP48E2_X12Y8:DSP48E2_X12Y9 SLICE_X71Y20:SLICE_X71Y24 DSP48E2_X12Y6:DSP48E2_X12Y7 SLICE_X71Y15:SLICE_X71Y19 DSP48E2_X12Y4:DSP48E2_X12Y5 SLICE_X71Y10:SLICE_X71Y14 DSP48E2_X12Y2:DSP48E2_X12Y3 SLICE_X71Y5:SLICE_X71Y9 DSP48E2_X12Y0:DSP48E2_X12Y1 SLICE_X71Y0:SLICE_X71Y4 }
+Related violations: <none>
+
+HDPRA-56#7 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G52_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X14Y24:DSP48E2_X14Y25 SLICE_X78Y60:SLICE_X78Y64 DSP48E2_X14Y22:DSP48E2_X14Y23 SLICE_X78Y55:SLICE_X78Y59 DSP48E2_X14Y20:DSP48E2_X14Y21 SLICE_X78Y50:SLICE_X78Y54 DSP48E2_X14Y18:DSP48E2_X14Y19 SLICE_X78Y45:SLICE_X78Y49 DSP48E2_X14Y16:DSP48E2_X14Y17 SLICE_X78Y40:SLICE_X78Y44 DSP48E2_X14Y14:DSP48E2_X14Y15 SLICE_X78Y35:SLICE_X78Y39 DSP48E2_X14Y12:DSP48E2_X14Y13 SLICE_X78Y30:SLICE_X78Y34 DSP48E2_X14Y10:DSP48E2_X14Y11 SLICE_X78Y25:SLICE_X78Y29 DSP48E2_X14Y8:DSP48E2_X14Y9 SLICE_X78Y20:SLICE_X78Y24 DSP48E2_X14Y6:DSP48E2_X14Y7 SLICE_X78Y15:SLICE_X78Y19 DSP48E2_X14Y4:DSP48E2_X14Y5 SLICE_X78Y10:SLICE_X78Y14 DSP48E2_X14Y2:DSP48E2_X14Y3 SLICE_X78Y5:SLICE_X78Y9 DSP48E2_X14Y0:DSP48E2_X14Y1 SLICE_X78Y0:SLICE_X78Y4 }
+Related violations: <none>
+
+HDPRA-56#8 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G54_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {DSP48E2_X15Y24:DSP48E2_X15Y25 SLICE_X81Y60:SLICE_X81Y64 DSP48E2_X15Y22:DSP48E2_X15Y23 SLICE_X81Y55:SLICE_X81Y59 DSP48E2_X15Y20:DSP48E2_X15Y21 SLICE_X81Y50:SLICE_X81Y54 DSP48E2_X15Y18:DSP48E2_X15Y19 SLICE_X81Y45:SLICE_X81Y49 DSP48E2_X15Y16:DSP48E2_X15Y17 SLICE_X81Y40:SLICE_X81Y44 DSP48E2_X15Y14:DSP48E2_X15Y15 SLICE_X81Y35:SLICE_X81Y39 DSP48E2_X15Y12:DSP48E2_X15Y13 SLICE_X81Y30:SLICE_X81Y34 DSP48E2_X15Y10:DSP48E2_X15Y11 SLICE_X81Y25:SLICE_X81Y29 DSP48E2_X15Y8:DSP48E2_X15Y9 SLICE_X81Y20:SLICE_X81Y24 DSP48E2_X15Y6:DSP48E2_X15Y7 SLICE_X81Y15:SLICE_X81Y19 DSP48E2_X15Y4:DSP48E2_X15Y5 SLICE_X81Y10:SLICE_X81Y14 DSP48E2_X15Y2:DSP48E2_X15Y3 SLICE_X81Y5:SLICE_X81Y9 DSP48E2_X15Y0:DSP48E2_X15Y1 SLICE_X81Y0:SLICE_X81Y4 }
+Related violations: <none>
+
+HDPRA-56#9 Advisory
+Narrow Gap without Location Constraints  
+RP pblock 'pblock_1' contains a narrow gap that may impact implementation results.  Removing the gap by absorbing the locations into the RP pblock may improve implementation and allow for continuous placement.  TAG='56_G61_RP1_S'.  Use the following command to adjust the RP to include the locations in the gap: 
+	 resize_pblock pblock_1 -add {RAMB36_X9Y12:RAMB36_X9Y12 RAMB18_X9Y24:RAMB18_X9Y25 SLICE_X91Y60:SLICE_X91Y64 RAMB36_X9Y11:RAMB36_X9Y11 RAMB18_X9Y22:RAMB18_X9Y23 SLICE_X91Y55:SLICE_X91Y59 RAMB36_X9Y10:RAMB36_X9Y10 RAMB18_X9Y20:RAMB18_X9Y21 SLICE_X91Y50:SLICE_X91Y54 RAMB36_X9Y9:RAMB36_X9Y9 RAMB18_X9Y18:RAMB18_X9Y19 SLICE_X91Y45:SLICE_X91Y49 RAMB36_X9Y8:RAMB36_X9Y8 RAMB18_X9Y16:RAMB18_X9Y17 SLICE_X91Y40:SLICE_X91Y44 RAMB36_X9Y7:RAMB36_X9Y7 RAMB18_X9Y14:RAMB18_X9Y15 SLICE_X91Y35:SLICE_X91Y39 RAMB36_X9Y6:RAMB36_X9Y6 RAMB18_X9Y12:RAMB18_X9Y13 HARD_SYNC_X18Y0:HARD_SYNC_X19Y1 SLICE_X91Y30:SLICE_X91Y34 RAMB36_X9Y5:RAMB36_X9Y5 RAMB18_X9Y10:RAMB18_X9Y11 SLICE_X91Y25:SLICE_X91Y29 RAMB36_X9Y4:RAMB36_X9Y4 RAMB18_X9Y8:RAMB18_X9Y9 SLICE_X91Y20:SLICE_X91Y24 RAMB36_X9Y3:RAMB36_X9Y3 RAMB18_X9Y6:RAMB18_X9Y7 SLICE_X91Y15:SLICE_X91Y19 RAMB36_X9Y2:RAMB36_X9Y2 RAMB18_X9Y4:RAMB18_X9Y5 SLICE_X91Y10:SLICE_X91Y14 RAMB36_X9Y1:RAMB36_X9Y1 RAMB18_X9Y2:RAMB18_X9Y3 SLICE_X91Y5:SLICE_X91Y9 RAMB36_X9Y0:RAMB36_X9Y0 RAMB18_X9Y0:RAMB18_X9Y1 SLICE_X91Y0:SLICE_X91Y4 }
+Related violations: <none>
+
+HDPRA-57#1 Advisory
+Gap with Location Constraints  
+RP pblock 'pblock_1' contains a gap with location constraints that likely will impact implementation results.  If possible, it is best to avoid gaps within an RP. If that cannot be done, nested pblock may be required in the pblock to minimize crossings. Also, you may need to add a static EXCLUDE_PLACEMENT pblock that covers the gap and add contains only essential logic to this pblock.  TAG='57_G31_RP1_S'.   Sites in gap: DSP48E2_X7Y24, DSP48E2_X7Y25, RAMB18_X5Y24, RAMB18_X5Y25, RAMB36_X5Y12,
+SLICE_X47Y58, SLICE_X47Y59, SLICE_X47Y60, SLICE_X47Y61, SLICE_X48Y59,
+SLICE_X48Y60, SLICE_X48Y61, SLICE_X49Y59, SLICE_X49Y60, SLICE_X49Y61
+ (the first 15 of 251 listed)
+Related violations: <none>
+
+HDPRA-58#1 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G15_RP1_S'.  Sites in gap: DSP48E2_X3Y24, DSP48E2_X3Y25, RAMB18_X2Y24, RAMB18_X2Y25, RAMB36_X2Y12,
+SLICE_X22Y57, SLICE_X22Y58, SLICE_X22Y59, SLICE_X22Y60, SLICE_X22Y61,
+SLICE_X23Y57, SLICE_X23Y58, SLICE_X23Y59, SLICE_X23Y60, SLICE_X23Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+HDPRA-58#2 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G19_RP1_S'.  Sites in gap: DSP48E2_X4Y24, DSP48E2_X4Y25, RAMB18_X3Y24, RAMB18_X3Y25, RAMB36_X3Y12,
+SLICE_X28Y57, SLICE_X28Y58, SLICE_X28Y59, SLICE_X28Y60, SLICE_X28Y61,
+SLICE_X29Y57, SLICE_X29Y58, SLICE_X29Y59, SLICE_X29Y60, SLICE_X29Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+HDPRA-58#3 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G23_RP1_S'.  Sites in gap: DSP48E2_X5Y24, DSP48E2_X5Y25, RAMB18_X4Y24, RAMB18_X4Y25, RAMB36_X4Y12,
+SLICE_X34Y57, SLICE_X34Y58, SLICE_X34Y59, SLICE_X34Y60, SLICE_X34Y61,
+SLICE_X35Y57, SLICE_X35Y58, SLICE_X35Y59, SLICE_X35Y60, SLICE_X35Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+HDPRA-58#4 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G3_RP1_S'.  Sites in gap: DSP48E2_X0Y24, DSP48E2_X0Y25, RAMB18_X0Y24, RAMB18_X0Y25, RAMB36_X0Y12,
+SLICE_X3Y57, SLICE_X3Y58, SLICE_X3Y59, SLICE_X3Y60, SLICE_X3Y61,
+SLICE_X4Y57, SLICE_X4Y58, SLICE_X4Y59, SLICE_X4Y60, SLICE_X4Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+HDPRA-58#5 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G40_RP1_S'.  Sites in gap: DSP48E2_X10Y24, DSP48E2_X10Y25, RAMB18_X6Y24, RAMB18_X6Y25, RAMB36_X6Y12,
+SLICE_X60Y57, SLICE_X60Y58, SLICE_X60Y59, SLICE_X60Y60, SLICE_X60Y61,
+SLICE_X61Y57, SLICE_X61Y58, SLICE_X61Y59, SLICE_X61Y60, SLICE_X61Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+HDPRA-58#6 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G49_RP1_S'.  Sites in gap: DSP48E2_X13Y24, DSP48E2_X13Y25, RAMB18_X7Y24, RAMB18_X7Y25, RAMB36_X7Y12,
+SLICE_X74Y57, SLICE_X74Y58, SLICE_X74Y59, SLICE_X74Y60, SLICE_X74Y61,
+SLICE_X75Y57, SLICE_X75Y58, SLICE_X75Y59, SLICE_X75Y60, SLICE_X75Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+HDPRA-58#7 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G57_RP1_S'.  Sites in gap: RAMB18_X8Y24, RAMB18_X8Y25, RAMB36_X8Y12, SLICE_X86Y58, SLICE_X86Y59,
+SLICE_X86Y60, SLICE_X86Y61, SLICE_X87Y58, SLICE_X87Y58, SLICE_X87Y59,
+SLICE_X87Y59, SLICE_X88Y58, SLICE_X88Y58, SLICE_X88Y59, SLICE_X88Y59
+ (the first 15 of 341 listed)
+Related violations: <none>
+
+HDPRA-58#8 Advisory
+Gap without Location Constraints  
+RP pblock 'pblock_1' contains a gap that may impact implementation results.  It is best to include these region(s) in the RP pblock.  Removing the gap will allow for continuous placement.  TAG='58_G7_RP1_S'.  Sites in gap: DSP48E2_X1Y24, DSP48E2_X1Y25, RAMB18_X1Y24, RAMB18_X1Y25, RAMB36_X1Y12,
+SLICE_X10Y57, SLICE_X10Y58, SLICE_X10Y59, SLICE_X10Y60, SLICE_X10Y61,
+SLICE_X9Y57, SLICE_X9Y58, SLICE_X9Y59, SLICE_X9Y60, SLICE_X9Y61
+ (the first 15 of 189 listed)
+Related violations: <none>
+
+

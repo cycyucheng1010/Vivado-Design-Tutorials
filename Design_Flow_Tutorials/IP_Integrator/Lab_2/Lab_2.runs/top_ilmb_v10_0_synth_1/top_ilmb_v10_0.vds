@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Sep 27 18:12:55 2024
+# Process ID: 2523243
+# Current directory: /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_2/Lab_2.runs/top_ilmb_v10_0_synth_1
+# Command line: vivado -log top_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_ilmb_v10_0.tcl
+# Log file: /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_2/Lab_2.runs/top_ilmb_v10_0_synth_1/top_ilmb_v10_0.vds
+# Journal file: /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_2/Lab_2.runs/top_ilmb_v10_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_ilmb_v10_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP top_ilmb_v10_0, cache-ID = afea6d6c5bf1121c.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 18:13:03 2024...

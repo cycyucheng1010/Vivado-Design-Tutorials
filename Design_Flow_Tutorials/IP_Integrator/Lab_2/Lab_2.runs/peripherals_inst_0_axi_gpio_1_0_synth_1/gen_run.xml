@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="peripherals_inst_0_axi_gpio_1_0_synth_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1727432314">
+  <File Type="REPORTS-TCL" Name="peripherals_inst_0_axi_gpio_1_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="peripherals_inst_0_axi_gpio_1_0.tcl"/>
+  <File Type="RDS-DCP" Name="peripherals_inst_0_axi_gpio_1_0.dcp"/>
+  <File Type="RDS-RDS" Name="peripherals_inst_0_axi_gpio_1_0.vds"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/peripherals_inst_0_axi_gpio_1_0">
+    <File Path="$PGENDIR/sources_1/bd/top/bd/peripherals_inst_0/ip/peripherals_inst_0_axi_gpio_1_0/peripherals_inst_0_axi_gpio_1_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="peripherals_inst_0_axi_gpio_1_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/peripherals_inst_0_axi_gpio_1_0">
+    <File Path="$PGENDIR/sources_1/bd/top/bd/peripherals_inst_0/ip/peripherals_inst_0_axi_gpio_1_0/peripherals_inst_0_axi_gpio_1_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="peripherals_inst_0_axi_gpio_1_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,25 @@
+vhdl xil_defaultlib  \
+"../../../bd/top/ip/top_rst_clk_wiz_1_100M_0/sim/top_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/top/ip/top_rst_ddr4_0_300M_0/sim/top_rst_ddr4_0_300M_0.vhd" \
+"../../../bd/top/ip/top_axi_bram_ctrl_0_0/sim/top_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/sim/bd_b43a_psr0_0.vhd" \
+"../../../bd/top/ip/top_axi_smc_0/bd_0/ip/ip_2/sim/bd_b43a_psr_aclk_0.vhd" \
+"../../../bd/top/ip/top_axi_smc_0/bd_0/ip/ip_3/sim/bd_b43a_psr_aclk1_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_0/sim/bd_1e58_microblaze_I_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_1/sim/bd_1e58_rst_0_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_2/sim/bd_1e58_ilmb_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_3/sim/bd_1e58_dlmb_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_4/sim/bd_1e58_dlmb_cntlr_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_5/sim/bd_1e58_ilmb_cntlr_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_7/sim/bd_1e58_second_dlmb_cntlr_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_8/sim/bd_1e58_second_ilmb_cntlr_0.vhd" \
+"../../../bd/top/ip/top_ddr4_0_0/bd_0/ip/ip_10/sim/bd_1e58_iomodule_0_0.vhd" \
+"../../../bd/top/ip/top_axi_intc_0_0/sim/top_axi_intc_0_0.vhd" \
+"../../../bd/top/ip/top_mdm_1_0/sim/top_mdm_1_0.vhd" \
+"../../../bd/top/ip/top_microblaze_0_0/sim/top_microblaze_0_0.vhd" \
+"../../../bd/top/ip/top_dlmb_v10_0/sim/top_dlmb_v10_0.vhd" \
+"../../../bd/top/ip/top_ilmb_v10_0/sim/top_ilmb_v10_0.vhd" \
+"../../../bd/top/ip/top_dlmb_bram_if_cntlr_0/sim/top_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/top/ip/top_ilmb_bram_if_cntlr_0/sim/top_ilmb_bram_if_cntlr_0.vhd" \
+
+nosort

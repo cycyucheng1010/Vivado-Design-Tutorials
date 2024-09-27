@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="top" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1727431930"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1727431930"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1727431930"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1727431930"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="synth/top.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim/top.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="top.bmm" Type="BMM">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="top_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff/top.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="top.bda">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff/top_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth/top.hwdef">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim/top.protoinst">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+    <BlockContainerCollection>
+      <BlockContainer InstPath="/peripherals" IsPR="true" State="Generated">
+        <ActiveVariantSynth FileName="bd/peripherals_inst_0/peripherals_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd/peripherals_inst_0/peripherals_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd/peripherals_2_inst_0/peripherals_2_inst_0.bd" BDFileset="peripherals_2_inst_0" BDSourceFile="../../../../Lab_2.srcs/sources_1/bd/peripherals_2/peripherals_2.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+          <BDFile BDFilePath="bd/peripherals_inst_0/peripherals_inst_0.bd" BDFileset="peripherals_inst_0" BDSourceFile="../../../../Lab_2.srcs/sources_1/bd/peripherals/peripherals.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+    </BlockContainerCollection>
+    <ReferenceCollection>
+      <ModuleReference TargetName="peripherals" Type="Block Design" SubInstancePath="top_peripherals_0">
+        <TopFile Name="../../../../Lab_2.srcs/sources_1/bd/peripherals/peripherals.bd"/>
+        <FileCollection>
+          <File Name="../../../../Lab_2.srcs/sources_1/bd/peripherals/peripherals.bd"/>
+        </FileCollection>
+      </ModuleReference>
+      <ModuleReference TargetName="peripherals_2" Type="Block Design" SubInstancePath="top_peripherals_2_0">
+        <TopFile Name="../../../../Lab_2.srcs/sources_1/bd/peripherals_2/peripherals_2.bd"/>
+        <FileCollection>
+          <File Name="../../../../Lab_2.srcs/sources_1/bd/peripherals_2/peripherals_2.bd"/>
+        </FileCollection>
+      </ModuleReference>
+    </ReferenceCollection>
+  </CompositeFile>
+</Root>

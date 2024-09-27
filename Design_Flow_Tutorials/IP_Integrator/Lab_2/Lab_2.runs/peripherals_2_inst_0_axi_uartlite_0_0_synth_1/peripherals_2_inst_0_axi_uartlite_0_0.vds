@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Sep 27 18:19:03 2024
+# Process ID: 2528966
+# Current directory: /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_2/Lab_2.runs/peripherals_2_inst_0_axi_uartlite_0_0_synth_1
+# Command line: vivado -log peripherals_2_inst_0_axi_uartlite_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source peripherals_2_inst_0_axi_uartlite_0_0.tcl
+# Log file: /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_2/Lab_2.runs/peripherals_2_inst_0_axi_uartlite_0_0_synth_1/peripherals_2_inst_0_axi_uartlite_0_0.vds
+# Journal file: /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_2/Lab_2.runs/peripherals_2_inst_0_axi_uartlite_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source peripherals_2_inst_0_axi_uartlite_0_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP peripherals_2_inst_0_axi_uartlite_0_0, cache-ID = 29e39d57d47f6a36.
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 18:19:07 2024...
