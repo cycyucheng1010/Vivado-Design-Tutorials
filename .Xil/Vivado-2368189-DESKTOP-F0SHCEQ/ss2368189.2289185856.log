@@ -1,0 +1,22 @@
+srcscan starts
+=============== Using vdb files for VHDL std libs ===========
+INFO: The vhdl library search path for library "std" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/std" (VHDL-1505)
+INFO: The vhdl library search path for library "synopsys" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/synopsys" (VHDL-1505)
+INFO: The vhdl library search path for library "ieee" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/ieee" (VHDL-1505)
+INFO: The vhdl library search path for library "unimacro" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/unimacro" (VHDL-1505)
+INFO: The vhdl library search path for library "unisim" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/unisim" (VHDL-1505)
+INFO: The vhdl library search path for library "vl" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/vl" (VHDL-1505)
+INFO: The vhdl library search path for library "xpm" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/xpm" (VHDL-1505)
+-- Analyzing VHDL file "/opt/Vivado-Design-Tutorials/Ip_Integrator/Lab_1/Lab1/Lab1.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd" into library lmb_v10_v3_0_11 (VHDL-9003)
+INFO: analyzing entity 'lmb_v10' (VHDL-1012)
+INFO: analyzing architecture 'IMP' of entity 'lmb_v10' (VHDL-9006)
+-- Analyzing VHDL file "/opt/Vivado-Design-Tutorials/Ip_Integrator/Lab_1/Lab1/Lab1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/sim/design_1_ilmb_v10_2.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity 'design_1_ilmb_v10_2' (VHDL-1012)
+INFO: analyzing architecture 'design_1_ilmb_v10_2_arch' of entity 'design_1_ilmb_v10_2' (VHDL-9006)
+Listing tops:
+VHDLTop: library:xil_defaultlib entity:design_1_ilmb_v10_2 arch:
+VHDLTop: library:xil_defaultlib entity:design_1_ilmb_v10_2 arch:
+END of tops
+/opt/Vivado-Design-Tutorials/Ip_Integrator/Lab_1/Lab1/Lab1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/sim/design_1_ilmb_v10_2.vhd(59): INFO: executing 'design_1_ilmb_v10_2_default(design_1_ilmb_v10_2_arch)' (VHDL-1067)
+/opt/Vivado-Design-Tutorials/Ip_Integrator/Lab_1/Lab1/Lab1.gen/sources_1/bd/design_1/ipshared/c2ed/hdl/lmb_v10_v3_0_vh_rfs.vhd(92): INFO: executing '\lmb_v10(c_lmb_num_slaves=1)\(IMP)' (VHDL-1067)
+srcscan exits with return value 0

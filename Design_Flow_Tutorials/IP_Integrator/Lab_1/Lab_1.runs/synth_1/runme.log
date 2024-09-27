@@ -1,0 +1,445 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.1/data/ip'.
+Command: synth_design -top design_1_wrapper -part xcvu9p-flga2104-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2399771
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3048.305 ; gain = 225.688 ; free physical = 22470 ; free virtual = 27072
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (2#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:215]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:215]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'design_1_axi_bram_ctrl_0_bram_0' has 16 connections declared, but only 14 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:215]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (3#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (4#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:251]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:251]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_0' (5#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hier_0_imp_MHUNTD' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:467]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (6#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_mdm_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'bscan_ext_tdo' of module 'design_1_mdm_1_0' is unconnected for instance 'mdm_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:590]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'design_1_mdm_1_0' has 21 connections declared, but only 20 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:590]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (7#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_0' is unconnected for instance 'microblaze_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:613]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 52 connections declared, but only 51 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:613]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_10TOAOI' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:911]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (8#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (9#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1057]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1057]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (10#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (11#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1103]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1103]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (12#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1128]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_0' is unconnected for instance 'lmb_bram' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1128]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1128]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_10TOAOI' (13#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:911]
+INFO: [Synth 8-6155] done synthesizing module 'hier_0_imp_MHUNTD' (14#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:467]
+INFO: [Synth 8-6157] synthesizing module 'hier_1_imp_JJAEZ6' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:689]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_1' (15#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_mdm_1_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'bscan_ext_tdo' of module 'design_1_mdm_1_1' is unconnected for instance 'mdm_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:812]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'design_1_mdm_1_1' has 21 connections declared, but only 20 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:812]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_1' (16#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_microblaze_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'design_1_microblaze_0_1' is unconnected for instance 'microblaze_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:835]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_1' has 52 connections declared, but only 51 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:835]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_KURX7E' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1145]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_1' (17#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_1' (18#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1291]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_1' has 25 connections declared, but only 24 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1291]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_1' (19#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_1' (20#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_1_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1337]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_1' has 25 connections declared, but only 24 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1337]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_1' (21#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_lmb_bram_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_lmb_bram_1' is unconnected for instance 'lmb_bram' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1362]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_lmb_bram_1' is unconnected for instance 'lmb_bram' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1362]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_1' has 16 connections declared, but only 14 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1362]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_KURX7E' (22#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:1145]
+INFO: [Synth 8-6155] done synthesizing module 'hier_1_imp_JJAEZ6' (23#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:689]
+WARNING: [Synth 8-7071] port 'Debug_SYS_Rst' of module 'hier_1_imp_JJAEZ6' is unconnected for instance 'hier_1' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:303]
+WARNING: [Synth 8-7023] instance 'hier_1' of module 'hier_1_imp_JJAEZ6' has 23 connections declared, but only 22 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:303]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (24#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:326]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:326]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:326]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (25#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M01_AXI_awqos' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:335]
+WARNING: [Synth 8-7071] port 'M01_AXI_arqos' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:335]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:335]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:335]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'design_1_smartconnect_0_0' has 111 connections declared, but only 107 given [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:335]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:443]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (26#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/.Xil/Vivado-2399733-DESKTOP-F0SHCEQ/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'smartconnect_0'. This will prevent further optimization [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:335]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'system_ila_0'. This will prevent further optimization [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:443]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_gpio_0'. This will prevent further optimization [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (27#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (28#1) [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3093.242 ; gain = 270.625 ; free physical = 21848 ; free virtual = 26451
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3111.055 ; gain = 288.438 ; free physical = 21846 ; free virtual = 26449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3111.055 ; gain = 288.438 ; free physical = 21846 ; free virtual = 26449
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3111.055 ; gain = 0.000 ; free physical = 21837 ; free virtual = 26439
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/smartconnect_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/hier_0/mdm_1'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/hier_0/mdm_1'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/hier_1/mdm_1'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/hier_1/mdm_1'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[0]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:240]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[1]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:241]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[2]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:242]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[3]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:243]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[4]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:244]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[5]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:245]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[6]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:246]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[7]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:247]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_capture'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:248]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_clk'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:249]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_rst'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:250]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_shift'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:251]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_tdi'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:252]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_tdo'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:253]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_update'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:254]
+WARNING: [Vivado 12-584] No ports matched 'mb_debug_sys_rst_0'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[0]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[1]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:257]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[2]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:258]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[3]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:259]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[4]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:260]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[5]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:261]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[6]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:262]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_reg_en[7]'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:263]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_capture'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_clk'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:265]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_rst'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:266]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_shift'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:267]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_tdi'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:268]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_tdo'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:269]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_update'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:270]
+WARNING: [Vivado 12-584] No ports matched 'mb_debug_sys_rst_0'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:271]
+WARNING: [Vivado 12-584] No ports matched 'DEBUG_0_disable'. [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc:272]
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/vcu118_rev2.0_12082017.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3233.648 ; gain = 0.000 ; free physical = 22550 ; free virtual = 27153
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3233.648 ; gain = 0.000 ; free physical = 22550 ; free virtual = 27153
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/hier_0/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/hier_1/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3236.617 ; gain = 414.000 ; free physical = 22666 ; free virtual = 27270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flga2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3236.617 ; gain = 414.000 ; free physical = 22632 ; free virtual = 27236
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for default_250mhz_clk1_clk_n. (constraint file  /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for default_250mhz_clk1_clk_n. (constraint file  /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for default_250mhz_clk1_clk_p. (constraint file  /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for default_250mhz_clk1_clk_p. (constraint file  /opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/smartconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_0/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/hier_1/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3236.617 ; gain = 414.000 ; free physical = 22666 ; free virtual = 27270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3236.617 ; gain = 414.000 ; free physical = 22664 ; free virtual = 27268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3236.617 ; gain = 414.000 ; free physical = 22653 ; free virtual = 27261
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3523.906 ; gain = 701.289 ; free physical = 22172 ; free virtual = 26780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3523.906 ; gain = 701.289 ; free physical = 22172 ; free virtual = 26780
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3543.945 ; gain = 721.328 ; free physical = 22166 ; free virtual = 26774
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |design_1_axi_bram_ctrl_0_0      |         1|
+|2     |design_1_axi_bram_ctrl_0_bram_0 |         1|
+|3     |design_1_axi_gpio_0_0           |         1|
+|4     |design_1_axi_uartlite_0_0       |         1|
+|5     |design_1_clk_wiz_1_0            |         1|
+|6     |design_1_rst_clk_wiz_1_100M_0   |         1|
+|7     |design_1_smartconnect_0_0       |         1|
+|8     |design_1_system_ila_0_0         |         1|
+|9     |design_1_mdm_1_0                |         1|
+|10    |design_1_microblaze_0_0         |         1|
+|11    |design_1_dlmb_bram_if_cntlr_0   |         1|
+|12    |design_1_dlmb_v10_0             |         1|
+|13    |design_1_ilmb_bram_if_cntlr_0   |         1|
+|14    |design_1_ilmb_v10_0             |         1|
+|15    |design_1_lmb_bram_0             |         1|
+|16    |design_1_mdm_1_1                |         1|
+|17    |design_1_microblaze_0_1         |         1|
+|18    |design_1_dlmb_bram_if_cntlr_1   |         1|
+|19    |design_1_dlmb_v10_1             |         1|
+|20    |design_1_ilmb_bram_if_cntlr_1   |         1|
+|21    |design_1_ilmb_v10_1             |         1|
+|22    |design_1_lmb_bram_1             |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |design_1_axi_bram_ctrl_0      |     1|
+|2     |design_1_axi_bram_ctrl_0_bram |     1|
+|3     |design_1_axi_gpio_0           |     1|
+|4     |design_1_axi_uartlite_0       |     1|
+|5     |design_1_clk_wiz_1            |     1|
+|6     |design_1_dlmb_bram_if_cntlr   |     2|
+|8     |design_1_dlmb_v10             |     2|
+|10    |design_1_ilmb_bram_if_cntlr   |     2|
+|12    |design_1_ilmb_v10             |     2|
+|14    |design_1_lmb_bram             |     2|
+|16    |design_1_mdm_1                |     2|
+|18    |design_1_microblaze_0         |     2|
+|20    |design_1_rst_clk_wiz_1_100M   |     1|
+|21    |design_1_smartconnect_0       |     1|
+|22    |design_1_system_ila_0         |     1|
+|23    |IBUF                          |     6|
+|24    |OBUF                          |     1|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.883 ; gain = 727.266 ; free physical = 22172 ; free virtual = 26779
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3549.883 ; gain = 601.703 ; free physical = 22199 ; free virtual = 26806
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3549.891 ; gain = 727.266 ; free physical = 22199 ; free virtual = 26806
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3558.789 ; gain = 0.000 ; free physical = 22292 ; free virtual = 26900
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3624.047 ; gain = 0.000 ; free physical = 22190 ; free virtual = 26798
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 6 instances
+
+Synth Design complete, checksum: fcb9b85a
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 3624.047 ; gain = 1083.309 ; free physical = 22328 ; free virtual = 26935
+INFO: [Common 17-1381] The checkpoint '/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 12:25:39 2024...

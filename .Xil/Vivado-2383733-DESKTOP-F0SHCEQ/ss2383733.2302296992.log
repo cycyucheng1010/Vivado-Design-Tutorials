@@ -1,0 +1,16 @@
+srcscan starts
+=============== Using vdb files for VHDL std libs ===========
+INFO: The vhdl library search path for library "std" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/std" (VHDL-1505)
+INFO: The vhdl library search path for library "synopsys" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/synopsys" (VHDL-1505)
+INFO: The vhdl library search path for library "ieee" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/ieee" (VHDL-1505)
+INFO: The vhdl library search path for library "unimacro" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/unimacro" (VHDL-1505)
+INFO: The vhdl library search path for library "unisim" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/unisim" (VHDL-1505)
+INFO: The vhdl library search path for library "vl" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/vl" (VHDL-1505)
+INFO: The vhdl library search path for library "xpm" is now "/tools/Xilinx/Vivado/2021.1/data/precomp_hsv/vhdl/xpm" (VHDL-1505)
+ERROR: cannot open verilog file '/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_sim_netlist.v' (SORT-1002)
+ERROR: cannot open vhdl file '/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_sim_netlist.vhdl' (SORT-1003)
+ERROR: cannot open verilog file '/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_sim_netlist.v' (VERI-1517)
+ERROR: cannot open vhdl file '/opt/Vivado-Design-Tutorials/Design_Flow_Tutorials/IP_Integrator/Lab_1/Lab_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_sim_netlist.vhdl' (VHDL-1515)
+Listing tops:
+END of tops
+srcscan exits with return value 0

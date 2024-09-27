@@ -1,0 +1,29 @@
+srcscan starts
+INFO: analyzing module STATE_LOGIC_v8_4 (VERI-9002)
+INFO: analyzing module beh_vlog_muxf7_v8_4 (VERI-9002)
+INFO: analyzing module beh_vlog_ff_clr_v8_4 (VERI-9002)
+INFO: analyzing module beh_vlog_ff_pre_v8_4 (VERI-9002)
+INFO: analyzing module beh_vlog_ff_ce_clr_v8_4 (VERI-9002)
+INFO: analyzing module write_netlist_v8_4 (VERI-9002)
+INFO: analyzing module read_netlist_v8_4 (VERI-9002)
+INFO: analyzing module blk_mem_axi_write_wrapper_beh_v8_4 (VERI-9002)
+INFO: analyzing module blk_mem_axi_read_wrapper_beh_v8_4 (VERI-9002)
+INFO: analyzing module blk_mem_axi_regs_fwd_v8_4 (VERI-9002)
+INFO: analyzing module blk_mem_gen_v8_4_4_output_stage (VERI-9002)
+INFO: analyzing module blk_mem_gen_v8_4_4_softecc_output_reg_stage (VERI-9002)
+INFO: analyzing module blk_mem_gen_v8_4_4_mem_module (VERI-9002)
+INFO: analyzing module blk_mem_gen_v8_4_4 (VERI-9002)
+INFO: analyzing module design_1_lmb_bram_0 (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:design_1_lmb_bram_0
+END of tops
+/opt/Vivado-Design-Tutorials/Ip_Integrator/Lab_1/Lab1/Lab1.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v(56): INFO: compiling module 'design_1_lmb_bram_0_default' (VERI-1018)
+ModName: blk_mem_gen_v8_4_4(C_FAMILY="virtexuplus",C_XDEVICEFAMILY="virtexuplus",C_ELABORATION_DIR="./",C_USE_BRAM_BLOCK=1,C_ENABLE_32BIT_ADDRESS=1,C_AXI_TYPE=1,C_BYTE_SIZE=8,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="design_1_lmb_bram_0.mem",C_HAS_RSTA=1,C_USE_BYTE_WEA=1,C_WEA_WIDTH=4,C_WRITE_DEPTH_A=2048,C_READ_DEPTH_A=2048,C_ADDRA_WIDTH=32,C_HAS_RSTB=1,C_INITB_VAL="0",C_USE_BYTE_WEB=1,C_WEB_WIDTH=4,C_WRITE_DEPTH_B=2048,C_READ_DEPTH_B=2048,C_ADDRB_WIDTH=32,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_EN_SAFETY_CKT=1,C_COUNT_36K_BRAM="2",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____7.734465_mW")
+ModName: blk_mem_gen_v8_4_4_mem_module(C_FAMILY="virtexuplus",C_XDEVICEFAMILY="virtexuplus",C_BYTE_SIZE=8,C_USE_BRAM_BLOCK=1,C_PRIM_TYPE=1,C_INIT_FILE_NAME="no_coe_file_loaded",C_INIT_FILE="design_1_lmb_bram_0.mem",C_HAS_RSTA=1,C_USE_BYTE_WEA=1,C_WEA_WIDTH=4,C_WRITE_DEPTH_A=2048,C_READ_DEPTH_A=2048,C_ADDRA_WIDTH=11,C_HAS_RSTB=1,C_INITB_VAL="0",C_USE_BYTE_WEB=1,C_WEB_WIDTH=4,C_WRITE_DEPTH_B=2048,C_READ_DEPTH_B=2048,C_ADDRB_WIDTH=11,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0)
+ModName: blk_mem_gen_v8_4_4_output_stage(C_FAMILY="virtexuplus",C_XDEVICEFAMILY="virtexuplus",C_HAS_RST=1,C_HAS_EN=1,C_ADDRB_WIDTH=11,NUM_STAGES=0)
+ModName: blk_mem_gen_v8_4_4_softecc_output_reg_stage(C_ADDRB_WIDTH=11)
+BaseName blk_mem_gen_v8_4_4 has 1 entries
+BaseName blk_mem_gen_v8_4_4_mem_module has 1 entries
+BaseName blk_mem_gen_v8_4_4_output_stage has 1 entries
+BaseName blk_mem_gen_v8_4_4_softecc_output_reg_stage has 1 entries
+srcscan exits with return value 0
